@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+  }
+  body {
+    @apply bg-backgroundLight text-textLight dark:bg-backgroundDark dark:text-textDark;
+    @apply transition-colors duration-300;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headings;
+  }
+  body, p, span, div {
+    @apply font-sans;
+  }
+}
